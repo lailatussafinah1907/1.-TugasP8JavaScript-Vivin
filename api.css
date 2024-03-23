@@ -1,0 +1,26 @@
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: purple; /* Mengganti warna latar belakang menjadi ungu */
+}
+
+#productTable th, #productTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#productTable th {
+    background-color: #f2f2f2;
+}
+
+/* Style untuk baris tabel (kecuali baris header) */
+#productTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style untuk baris saat di-hover */
+#productTable tbody tr:hover {
+    background-color: #ddd;
+}

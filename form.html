@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Pendaftaran</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    label {
+        font-weight: bold;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<form action="#" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="no_hp">No. HP:</label>
+        <input type="tel" id="no_hp" name="no_hp" required>
+    </div>
+    <div class="form-group">
+    <label for="jenis_kelamin">Jenis Kelamin:</label>
+    <select id="jenis_kelamin" name="jenis_kelamin" required class="rounded-select">
+        <option value="laki-laki">Laki-laki</option>
+        <option value="perempuan">Perempuan</option>
+    </select>
+</div>
+
+    </div>
+    <div class="form-group">
+        <label for="prodi">Prodi:</label><br>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+            <option value="laki-laki">Pilih</option>
+            <option value="perempuan">Pilih</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="hobi">Hobi:</label><br>
+        <input type="checkbox" id="hobi1" name="hobi[]" value="Membaca"> <label for="hobi1">Membaca</label><br>
+        <input type="checkbox" id="hobi2" name="hobi[]" value="Menulis"> <label for="hobi2">Menulis</label><br>
+        <input type="checkbox" id="hobi3" name="hobi[]" value="Menyanyi"> <label for="hobi3">Menyanyi</label><br>
+        <input type="checkbox" id="hobi4" name="hobi[]" value="Olahraga"> <label for="hobi4">Olahraga</label><br>
+    </div>
+    <div class="form-group">
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="foto">Foto Diri:</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required>
+    </div>
+    <input type="submit" value="Daftar">
+</form>
+
+</body>
+</html>
